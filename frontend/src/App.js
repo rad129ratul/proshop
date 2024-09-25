@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import { Outlet } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import HomeScreen from './screens/HomeScreen'
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Header/>
       <main>
         <Container>
-          <HomeScreen />
+          <Outlet />
         </Container>
       </main>
       <Footer/>
@@ -20,4 +20,4 @@ const App = () => {
 
 export default App
 
-//file 2 video 2 02.40
+//file 2 video 7
